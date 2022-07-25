@@ -23,16 +23,16 @@ spec:
         args:
           - --bind_ip
           - 0.0.0.0
-        volumeMounts:
-        - mountPath: /data
-          name: mongo-pvc
-      volumes:
-        - name: mongo-pvc
-          persistentVolumeClaim:
-            claimName: mongo-pvc
         resources:
           requests:
             cpu: 100m
             memory: 100Mi
         ports:
         - containerPort: 27017
+        volumeMounts: 
+            - name: mongo-pvc
+              mountPath: /data
+      volumes:
+        - name: mongo-pvc
+          persistentVolumeClaim:
+            claimName: mongo-pvc 
