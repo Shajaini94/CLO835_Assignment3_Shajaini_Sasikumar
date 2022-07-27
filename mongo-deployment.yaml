@@ -36,3 +36,12 @@ spec:
         - name: mongo-pvc
           persistentVolumeClaim:
             claimName: mongo-pvc 
+            
+  #Persistent Volume for hostpath
+        #volumeMounts:
+            #- mountPath: /data/db
+             # name: mongo-hostpath-pv
+      #volumes:
+       #- name: mongo-hostpath-pv
+        #hostPath:
+          #path: /tmp/mongodb
