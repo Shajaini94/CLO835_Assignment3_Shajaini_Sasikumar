@@ -11,7 +11,7 @@ spec:
         configMapKeyRef:
           name: webcolor-config
           key: sleep-interval
-    name: html-generator
+    name: webapp-color
     volumeMounts:
     - name: html
       mountPath: /var/htdocs
