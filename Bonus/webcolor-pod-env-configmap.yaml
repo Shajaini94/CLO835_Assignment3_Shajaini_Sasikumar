@@ -10,7 +10,7 @@ spec:
       valueFrom: 
         configMapKeyRef:
           name: webcolor-config
-          key: sleep-interval
+          key: color
     name: webapp-color
     volumeMounts:
     - name: html
